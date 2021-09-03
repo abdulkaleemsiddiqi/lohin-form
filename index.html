@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAKISTAN</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        
+    <nav>
+        <div class="logo"> <h1 style="font-size: 20px;"> ABDUL KALEEM </h1> </div>
+        <div class="menu">
+            
+            <button class="btntwo" onclick="login()" >LOGIN here</button>
+
+        </div>
+    </nav>
+    
+        <main>
+            <section>
+                <h3>Welcome To PAKISTAN</h3>
+                <h1>DO COME & VISIT <span class="change_content"> </span> <span style="margin-top: -10px;"> | </span> </h1>
+                <p>"LONG LIVE PAKISTAN"</p>
+
+                <button class="btntwo" onclick="login()" >LOGIN </button>
+            </section>
+        </main>
+    
+    
+    </header>
+
+
+    	<!-- log in -->
+	<div id="one" class="box login db">
+	
+		<div class="inner-box">
+		
+			<form action="">
+			
+			<h2>Login Here</h2>
+			
+			<input type="text" name="username" placeholder="Username" required/>
+			<input type="password" password="password" placeholder="Password" required/>
+			
+			<p>
+			
+			<input type="checkbox" /><span> Keep me Signed In</span>
+			
+			<span class="forgot" > <button onclick="forgotpass()">Forgot Password?</button> </span>
+			
+			</p>
+			
+			<input type="submit" value="LogIn" />
+			
+			<p style="text-align:center;" >
+				<span>Not a member? </span><button class="btn"  onclick="signup()"> sign up</button>
+			</p>
+			<br> <br> <br>
+			<hr> <br> <br> <br>
+
+			
+
+			<p style="text-align:center;" >
+				<a class="acc bb" href="https://mail.google.com/mail/u/0/#inbox"> <i class="fab fa-google"></i>Login with GOOGLE account</a>
+			<br> <br> <br>
+			<a class="acc aa" href="https://www.facebook.com/"  > <i class="fab fa-facebook-f"></i>Login with FACEBOOK account</a>
+			</p>
+            <br><br>
+            <hr>
+            <button onclick=" backclose()">CLOSE</button>
+
+
+
+			<br> 
+			
+			</form>
+		
+		</div>
+	
+	</div>
+	
+
+	<!-- register -->
+	<div id="two" class=" box sinin db" >
+	
+		<div class="inner-box">
+		
+		<form action="thanks.html" method="post">
+		<h2>SignUp Today</h2>
+		
+		<input type="text" name="fullname" placeholder="Your Full Name" required/>
+		<input type="text" name="username" placeholder="Username" required/>
+		<input type="email" name="email" placeholder="Email Address" required/>
+		<input type="password" name="password" placeholder="Password" required/>
+		<input type="password" name="conformpassword" placeholder="Conform Password" required/>
+		<input type="submit" value="SignUp" />
+		<p style="text-align:center;" >
+			 
+			<p>
+			<span>Already Register ? </span>
+
+				<span class="" > <button onclick="backToSigninn()"> LOGIN</button> </span>
+				
+				</p>
+			
+			</form>
+		</form>
+		
+		</div>
+		
+	</div>
+	
+
+		<!-- forgot -->
+	<div id="three" class="box forgot_pass db">
+	
+		<div class="inner-box">
+		
+		<form action="">
+		
+		<h3>Enter Your Email Address.</h3>
+		
+		<input type="email" name="email" placeholder="Email Address" required/>
+		
+		<input type="submit" value="Send Recovery Link" />
+
+		<p>
+			<span class="forgot" > <button onclick="backToSignin()">Back To LOGIN</button> </span>
+			
+			</p>
+		
+		</form>
+		
+		</div>
+	</div>
+    <script >
+
+
+
+    </script>
+
+    <script src="app.js"></script>
+    </body>
+    </html>
+
+</html>
